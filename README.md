@@ -154,11 +154,6 @@ PORT   STATE SERVICE
 ## Boot Logs
 
 See `boot-logs/` directory for complete boot sequences:
-- `normal-boot.log` - Standard boot sequence
-- `debug-level-4.log` - Boot with maximum debug verbosity
-- `pin2-low-boot.log` - Boot with Pin 2 grounded (U-Boot error)
-- `pin4-low-boot.log` - Boot with Pin 4 grounded (kernel panic - rootfs mount failure)
-- `pin5-low-boot.log` - Boot with Pin 5 grounded (kernel panic - flash not detected)
 
 ## Related Projects
 
