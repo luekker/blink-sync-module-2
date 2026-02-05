@@ -7,11 +7,11 @@ Hardware documentation for the Blink Sync Module 2. This repository contains fin
 
 **IMPORTANT: The existing RECESSIM wiki page lists incorrect hardware for this version (v10). Hardware specifications below:**
 
-- **SOC:** Atheros AR9330 rev 1 (MIPS 24Kc @ 400MHz)
-- **RAM:** 64 MB DDR2 16-bit
-- **Flash:** 8 MB Winbond W25Q64 (SPI)
+- **SOC:** Atheros AR9330 rev 1 (MIPS 24Kc @ 400MHz) - official documentation no longer publicly available
+- **RAM:** 64 MB DDR2 16-bit [ISSI IS43TR16640BL Datasheet](https://www.issi.com/WW/pdf/43-46TR16640B-81280BL.pdf)
+- **Flash:** 8 MB Winbond W25Q64 (SPI) [Winbond W25Q64 Datasheet](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/)
 - **WiFi:** Atheros AR9330 built-in
-- **Sub-GHz Radio:** Silicon Labs Si4455
+- **Sub-GHz Radio:** Silicon Labs Si4455 [Silicon Labs Si4455 Datasheet](https://www.silabs.com/documents/public/data-sheets/Si4455.pdf)
 
 **The wiki previously listed NXP i.MX6 UltraLite - this is incorrect for this hardware revision.**
 
