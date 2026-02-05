@@ -73,7 +73,7 @@ Please press Enter to activate this console.
 - **Pin 1:** 2.68V - 1.6V
 - **Pin 2:** 0V
 - **Pin 3:** 0V - 0.5V 
-- **Pin 4:** 0V (confirmed GND)
+- **Pin 4:** GND
 - **Pin 5:** 0V
 - **Pin 6:** 3.25V
 
