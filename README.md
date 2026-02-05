@@ -171,7 +171,3 @@ Found additional information or corrections? Please open an issue or submit a pu
 ## Disclaimer
 
 This project is for educational and research purposes only. Modifications to your Blink Sync Module may void warranty and could potentially damage the device. The author is not responsible for any damage to hardware or loss of functionality. This work is not affiliated with or endorsed by Blink or Amazon.
-
-## License
-
-Documentation and findings are shared under CC BY-SA 4.0. Boot logs and hardware observations are factual data.
