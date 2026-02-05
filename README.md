@@ -1,4 +1,4 @@
-# Blink Sync Module 2 (v10) - Hardware Investigation
+# Blink Sync Module 2 - Rev AO - Hardware Investigation
 
 ## Overview
 Hardware documentation for the Blink Sync Module 2. This repository contains findings from reverse engineering and hardware exploration to gain shell access and understand the device's internals.
@@ -7,9 +7,9 @@ Hardware documentation for the Blink Sync Module 2. This repository contains fin
 
 ## Hardware Specifications
 
-**IMPORTANT: The existing RECESSIM wiki page lists incorrect hardware for this version (v10). Hardware specifications below:**
+**IMPORTANT: The existing RECESSIM wiki page lists incorrect hardware for this version - Rev AO. Hardware specifications below:**
 
-- **SOC:** Atheros AR9330 rev 1 (MIPS 24Kc @ 400MHz) - official documentation no longer publicly available
+- **SOC:** Atheros AR9331 rev 1 (MIPS 24Kc @ 400MHz) - Despite boot saying 9330 its is a 9331 [AR9331 Documentation](https://github.com/Deoptim/atheros/blob/master/AR9331.pdf)
 - **RAM:** 64 MB DDR2 16-bit [ISSI IS43TR16640BL Datasheet](https://www.issi.com/WW/pdf/43-46TR16640B-81280BL.pdf)
 - **Flash:** 8 MB Winbond W25Q64 (SPI) [Winbond W25Q64 Datasheet](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/)
 - **WiFi:** Atheros AR9330 built-in
@@ -162,6 +162,7 @@ See `boot-logs/` directory for complete boot sequences:
 - [bling-wrt](https://github.com/lurume84/bling-wrt) - Customization for original Blink Sync Module (different hardware)
 - [Blink Mini teardown](https://astrid.tech/2022/07/07/0/blink-mini-disassembly/) - Hardware analysis of Blink Mini camera
 - [BlinkMonitorProtocol](https://github.com/MattTW/BlinkMonitorProtocol) - Reverse engineered cloud API documentation
+- [Reversing Blink Cameras](https://www.brainonfire.net/blog/2023/10/21/reversing-blink/) - Uses Rev AO board
 
 ## Contributing
 
