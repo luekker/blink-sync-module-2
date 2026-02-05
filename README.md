@@ -3,6 +3,8 @@
 ## Overview
 Hardware documentation for the Blink Sync Module 2. This repository contains findings from reverse engineering and hardware exploration to gain shell access and understand the device's internals.
 
+<img src="images/pcb-top.jpeg" width="100"><img src="images/blink-sync-module-2.jpeg" width="100">
+
 ## Hardware Specifications
 
 **IMPORTANT: The existing RECESSIM wiki page lists incorrect hardware for this version (v10). Hardware specifications below:**
