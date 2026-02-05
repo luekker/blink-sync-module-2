@@ -1,0 +1,293 @@
+
+
+***************************************
+*     U-Boot 1.1.4-ffaaa3d1-clean     *
+*          Build: 2023-11-16          *
+***************************************
+
+** Warning: bad env CRC, using default,
+   use 'saveenv' to save it in FLASH
+
+  BOARD: Blink Sync Module
+    SOC: AR9330 rev. 1
+    CPU: MIPS 24Kc
+    RAM: 64 MB DDR2 16-bit CL3-4-4-10
+  FLASH: 8 MB Winbond W25Q64
+    MAC: 00:03:7F:09:0B:AD (fixed)
+ CLOCKS: CPU/RAM/AHB/SPI/REF
+         400/400/200/ 25/ 25 MHz
+
+Waiting for button press  0secWaiting for button press  1secWaiting for button press  2secWaiting for button press  3secWaiting for button press  4secBooting image from 0x9F050000...
+
+   Image name:    MIPS OpenWrt Linux-4.14.180
+   Build date:    2020-05-16 18:32:20 UTC
+   Architecture:  MIPS
+   OS/image type: Linux Kernel
+   Compression:   LZMA
+   Data size:     1.5 MB (1576571 bytes)
+   Load address:  0x80060000
+   Entry point:   0x80060000
+
+   Header CRC...  OK!
+   Data CRC...    skipped
+
+Uncompressing Kernel... OK!
+Starting kernel...
+
+[    0.000000] Linux version 4.14.180 (@4240db61985c) (gcc version 7.5.0 (OpenWrt GCC 7.5.0 r11063-85e04e9f46)) #0 Sat May 16 18:32:20 2020
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 revision is: 00019374 (MIPS 24Kc)
+[    0.000000] SoC: Atheros AR9330 rev 1
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, VIPT, cache aliases, linesize 32 bytes
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x0000000003ffffff]
+[    0.000000] random: get_random_bytes called from start_kernel+0x90/0x478 with crng_init=0
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 16256
+[    0.000000] Kernel command line: console=ttyATH0,115200 rootfstype=jffs2 init=/sbin/init board=AP121 mtdparts=spi0.0:256k(u-boot),64k(u-boot-env),1728k(kernel),6016k(rootfs),64k(NVRAM),64k(ART) mem=64M rootfstype=squashfs,jffs2 noinitrd rootfstype=squashfs noinitrd
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Writing ErrCtl register=00000000
+[    0.000000] Readback ErrCtl register=00000000
+[    0.000000] Memory: 59352K/65536K available (3637K kernel code, 187K rwdata, 876K rodata, 284K init, 198K bss, 6184K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] NR_IRQS: 51
+[    0.000000] Clocks: CPU:400.000MHz, DDR:400.000MHz, AHB:200.000MHz, Ref:25.000MHz
+[    0.000000] clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302233 ns
+[    0.000013] sched_clock: 32 bits at 200MHz, resolution 5ns, wraps every 10737418237ns
+[    0.007901] Calibrating delay loop... 265.42 BogoMIPS (lpj=1327104)
+[    0.092709] pid_max: default: 32768 minimum: 301
+[    0.097642] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.103968] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.114528] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.122933] futex hash table entries: 256 (order: -1, 3072 bytes)
+[    0.129716] NET: Registered protocol family 16
+[    0.135552] MIPS: machine is Atheros AP121 reference board
+[    0.682644] clocksource: Switched to clocksource MIPS
+[    0.687738] NET: Registered protocol family 2
+[    0.691844] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.697681] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.704013] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.710519] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.716215] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.722811] NET: Registered protocol family 1
+[    0.735017] workingset: timestamp_bits=30 max_order=14 bucket_order=0
+[    0.747721] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.752103] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.775498] io scheduler noop registered
+[    0.777971] io scheduler deadline registered (default)
+[    0.783946] Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+[    0.790040] ar933x-uart: ttyATH0 at MMIO 0x18020000 (irq = 11, base_baud = 1562500) is a AR933X UART
+[    0.799104] console [ttyATH0] enabled
+[    0.799104] console [ttyATH0] enabled
+[    0.805889] bootconsole [early0] disabled
+[    0.805889] bootconsole [early0] disabled
+[    0.819710] m25p80 spi0.0: found s25fl064k, expected m25p80
+[    0.833648] m25p80 spi0.0: s25fl064k (8192 Kbytes)
+[    0.837030] 6 cmdlinepart partitions found on MTD device spi0.0
+[    0.842934] Creating 6 MTD partitions on "spi0.0":
+[    0.847678] 0x000000000000-0x000000040000 : "u-boot"
+[    0.855051] 0x000000040000-0x000000050000 : "u-boot-env"
+[    0.860919] 0x000000050000-0x000000200000 : "kernel"
+[    0.867363] 0x000000200000-0x0000007e0000 : "rootfs"
+[    0.871989] mtd: device 3 (rootfs) set to be root filesystem
+[    0.876677] 1 squashfs-split partitions found on MTD device rootfs
+[    0.882737] 0x000000640000-0x0000007e0000 : "rootfs_data"
+[    0.891280] 0x0000007e0000-0x0000007f0000 : "NVRAM"
+[    0.896837] 0x0000007f0000-0x000000800000 : "ART"
+[    0.904447] libphy: Fixed MDIO Bus: probed
+[    0.929679] libphy: ag71xx_mdio: probed
+[    1.554152] ag71xx-mdio.1: Found an AR7240/AR9330 built-in switch
+[    1.596070] eth0: Atheros AG71xx at 0xba000000, irq 5, mode: gmii
+[    2.224454] ag71xx ag71xx.0: connected to PHY at ag71xx-mdio.1:04 [uid=004dd041, driver=Generic PHY]
+[    2.233053] eth1: Atheros AG71xx at 0xb9000000, irq 4, mode: mii
+[    2.240452] NET: Registered protocol family 10
+[    2.249665] Segment Routing with IPv6
+[    2.252005] NET: Registered protocol family 17
+[    2.257280] 8021q: 802.1Q VLAN Support v1.8
+[    2.268710] VFS: Mounted root (squashfs filesystem) readonly on device 31:3.
+[    2.276865] Freeing unused kernel memory: 284K
+[    2.279843] This architecture does not have kernel memory protection.
+[    2.542661] random: fast init done
+[    3.100233] init: Console is alive
+[    3.102533] init: - watchdog -
+[    4.584237] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    4.703875] usbcore: registered new interface driver usbfs
+[    4.707993] usbcore: registered new interface driver hub
+[    4.713450] usbcore: registered new device driver usb
+[    4.727600] exFAT: Version 1.2.9
+[    4.734151] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    4.752611] SCSI subsystem initialized
+[    4.762410] ehci-platform: EHCI generic platform driver
+[    4.766397] ehci-platform ehci-platform: EHCI Host Controller
+[    4.771962] ehci-platform ehci-platform: new USB bus registered, assigned bus number 1
+[    4.782012] ehci-platform ehci-platform: irq 3, io mem 0x1b000000
+[    4.812702] ehci-platform ehci-platform: USB 2.0 started, EHCI 1.00
+[    4.818727] hub 1-0:1.0: USB hub found
+[    4.821739] hub 1-0:1.0: 1 port detected
+[    4.830458] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    4.837045] ohci-platform: OHCI generic platform driver
+[    4.847226] usbcore: registered new interface driver usb-storage
+[    4.852800] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    4.862822] init: - preinit -
+Press the [1], [2], [3] or [4] key and hit [enter] to select the debug level
+3
+[    6.892827] jffs2: notice: (392) jffs2_build_xattr_subsystem: complete building xattr subsystem, 6 of xdatum (0 unchecked, 3 orphan) and 12 of xref (3 dead, 0 orphan) found.
+[    6.908808] mount_root: switching to jffs2 overlay
+[    6.938295] overlayfs: upper fs does not support tmpfile.
+[    6.970803] procd: - early -
+[    6.972378] procd: Watchdog handover: fd=3
+[    6.976558] procd: - watchdog -
+[    7.030325] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/mem/full","SUBSYSTEM":"mem","SYNTH_UUID":"0","MAJOR":"1","MINOR":"7","DEVNAME":"full","DEVMODE":"0666","SEQNUM":"350"}}
+[    7.075283] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/mem/urandom","SUBSYSTEM":"mem","SYNTH_UUID":"0","MAJOR":"1","MINOR":"9","DEVNAME":"urandom","DEVMODE":"0666","SEQNUM":"351"}}
+[    7.091577] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/mem/null","SUBSYSTEM":"mem","SYNTH_UUID":"0","MAJOR":"1","MINOR":"3","DEVNAME":"null","DEVMODE":"0666","SEQNUM":"352"}}
+[    7.107697] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/mem/random","SUBSYSTEM":"mem","SYNTH_UUID":"0","MAJOR":"1","MINOR":"8","DEVNAME":"random","DEVMODE":"0666","SEQNUM":"353"}}
+[    7.124809] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/misc/network_latency","SUBSYSTEM":"misc","SYNTH_UUID":"0","MAJOR":"10","MINOR":"62","DEVNAME":"network_latency","SEQNUM":"354"}}
+[    7.141864] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/misc/memory_bandwidth","SUBSYSTEM":"misc","SYNTH_UUID":"0","MAJOR":"10","MINOR":"60","DEVNAME":"memory_bandwidth","SEQNUM":"355"}}
+[    7.159182] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/misc/cpu_dma_latency","SUBSYSTEM":"misc","SYNTH_UUID":"0","MAJOR":"10","MINOR":"63","DEVNAME":"cpu_dma_latency","SEQNUM":"356"}}
+[    7.176167] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/misc/watchdog","SUBSYSTEM":"misc","SYNTH_UUID":"0","MAJOR":"10","MINOR":"130","DEVNAME":"watchdog","SEQNUM":"357"}}
+[    7.192583] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/misc/network_throughput","SUBSYSTEM":"misc","SYNTH_UUID":"0","MAJOR":"10","MINOR":"61","DEVNAME":"network_throughput","SEQNUM":"358"}}
+[    7.209797] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/tty/ptmx","SUBSYSTEM":"tty","SYNTH_UUID":"0","MAJOR":"5","MINOR":"2","DEVNAME":"ptmx","DEVMODE":"0666","SEQNUM":"359"}}
+[    7.225874] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/tty/console","SUBSYSTEM":"tty","SYNTH_UUID":"0","MAJOR":"5","MINOR":"1","DEVNAME":"console","SEQNUM":"360"}}
+[    7.241529] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/serial8250/tty/ttyS0","SUBSYSTEM":"tty","SYNTH_UUID":"0","MAJOR":"4","MINOR":"64","DEVNAME":"ttyS0","SEQNUM":"361"}}
+[    7.258617] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ar933x-uart/tty/ttyATH0","SUBSYSTEM":"tty","SYNTH_UUID":"0","MAJOR":"253","MINOR":"0","DEVNAME":"ttyATH0","SEQNUM":"362"}}
+[    7.275167] procd: {{"ACTION":"add","DEVPATH":"/devices/virtual/tty/tty","SUBSYSTEM":"tty","SYNTH_UUID":"0","MAJOR":"5","MINOR":"0","DEVNAME":"tty","DEVMODE":"0666","SEQNUM":"363"}}
+[    7.290818] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ath79-spi/spi_master/spi0/spi0.0/mtd/mtd4/mtdblock4","SUBSYSTEM":"block","SYNTH_UUID":"0","MAJOR":"31","MINOR":"4","DEVNAME":"mtdblock4","DEVTYPE":"disk","SEQNUM":"364"}}
+[    7.311953] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ath79-spi/spi_master/spi0/spi0.0/mtd/mtd2/mtdblock2","SUBSYSTEM":"block","SYNTH_UUID":"0","MAJOR":"31","MINOR":"2","DEVNAME":"mtdblock2","DEVTYPE":"disk","SEQNUM":"365"}}
+[    7.333242] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ath79-spi/spi_master/spi0/spi0.0/mtd/mtd0/mtdblock0","SUBSYSTEM":"block","SYNTH_UUID":"0","MAJOR":"31","MINOR":"0","DEVNAME":"mtdblock0","DEVTYPE":"disk","SEQNUM":"366"}}
+[    7.353776] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ath79-spi/spi_master/spi0/spi0.0/mtd/mtd5/mtdblock5","SUBSYSTEM":"block","SYNTH_UUID":"0","MAJOR":"31","MINOR":"5","DEVNAME":"mtdblock5","DEVTYPE":"disk","SEQNUM":"367"}}
+[    7.374516] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ath79-spi/spi_master/spi0/spi0.0/mtd/mtd3/mtdblock3","SUBSYSTEM":"block","SYNTH_UUID":"0","MAJOR":"31","MINOR":"3","DEVNAME":"mtdblock3","DEVTYPE":"disk","SEQNUM":"368"}}
+[    7.395790] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ath79-spi/spi_master/spi0/spi0.0/mtd/mtd1/mtdblock1","SUBSYSTEM":"block","SYNTH_UUID":"0","MAJOR":"31","MINOR":"1","DEVNAME":"mtdblock1","DEVTYPE":"disk","SEQNUM":"369"}}
+[    7.416223] procd: {{"ACTION":"add","DEVPATH":"/devices/platform/ath79-spi/spi_master/spi0/spi0.0/mtd/mtd6/mtdblock6","SUBSYSTEM":"block","SYNTH_UUID":"0","MAJOR":"31","MINOR":"6","DEVNAME":"mtdblock6","DEVTYPE":"disk","SEQNUM":"370"}}
+[    7.936529] procd: - watchdog -
+[    7.938678] procd: - ubus -
+[    7.941210] procd: Create service ubus
+[    7.945139] procd: Start instance ubus::instance1
+[    7.950321] procd: Started instance ubus::instance1[439]
+[    7.963048] procd: running /etc/init.d/ubus running
+[    7.966909] procd: glob failed on /etc/init.d/ubus
+[    8.106393] random: ubusd: uninitialized urandom read (4 bytes read)
+[    8.112345] random: ubusd: uninitialized urandom read (4 bytes read)
+[    8.118374] random: ubusd: uninitialized urandom read (4 bytes read)
+[    8.125412] procd: Connected to ubus, id=3eab5015
+[    8.128823] procd: - init -
+[    8.134285] procd: running /etc/rc.d/S* boot
+Please press Enter to activate this console.
+[    8.557262] kmodloader: loading kernel modules from /etc/modules.d/*
+[    8.594883] usbcore: registered new interface driver cdc_acm
+[    8.599092] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    8.610787] usbcore: registered new interface driver cdc_wdm
+[    8.618502] Loading modules backported from Linux version v4.19.120-0-gfdc072324f3c
+[    8.624789] Backport generated by backports.git v4.19.120-1-0-g60c3a249
+[    8.633773] lib80211: common routines for IEEE802.11 drivers
+[    8.735994] usbcore: registered new interface driver qmi_wwan
+[    8.811396] ieee80211 phy0: Atheros AR9330 Rev:1 mem=0xb8100000, irq=2
+[    8.974728] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   10.357664] urandom_read: 5 callbacks suppressed
+[   10.357677] random: jshn: uninitialized urandom read (4 bytes read)
+[   10.475700] random: ubusd: uninitialized urandom read (4 bytes read)
+[   17.548528] register deadman  0
+[   17.550438] deadman_timer version: 1.38
+[   19.692833] Found 0 in mtd5
+[   19.750296] eu mode
+[   19.750945] chip reset
+[   19.773167] si4455_ioctl version: 1.61
+[   19.987145] br-lan: port 1(eth0) entered blocking state
+[   19.990935] br-lan: port 1(eth0) entered disabled state
+[   19.996663] device eth0 entered promiscuous mode
+[   20.017946] br-lan: port 1(eth0) entered blocking state
+[   20.021735] br-lan: port 1(eth0) entered forwarding state
+[   20.027890] IPv6: ADDRCONF(NETDEV_UP): br-lan: link is not ready
+[   20.071438] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   20.524230] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   21.065974] br-lan: port 1(eth0) entered disabled state
+[   22.044926] ath: EEPROM regdomain: 0x810c
+[   22.047489] ath: EEPROM indicates we should expect a country code
+[   22.053654] ath: doing EEPROM country->regdmn map search
+[   22.058858] ath: country maps to regdmn code: 0x30
+[   22.063651] ath: Country alpha2 being used: GE
+[   22.068058] ath: Regpair used: 0x30
+[   22.071535] ath: regdomain 0x810c dynamically updated by user
+[   22.312140] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   23.543053] device eth0 left promiscuous mode
+[   23.546079] br-lan: port 1(eth0) entered disabled state
+[   23.584881] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   24.930626] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   25.336760] br-lan: port 1(wlan0) entered blocking state
+[   25.340627] br-lan: port 1(wlan0) entered disabled state
+[   25.346470] device wlan0 entered promiscuous mode
+[   25.458215] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   27.333231] device wlan0 left promiscuous mode
+[   27.336365] br-lan: port 1(wlan0) entered disabled state
+INFO  (pp/smapp.c: 437) [18:33:40.358]STARTUP IMMI 40
+ERROR (rsist_rw.c: 103) [18:33:40.358]Cannot open /root/persist_sm.log
+INFO  (util/log.c: 458) [18:33:40.359]unable to access persistent log file [-3]
+WARN  (rsist_ob.c:  46) [18:33:40.509]File Not found /root/config/.server
+WARN  (rsist_ob.c:  46) [18:33:40.510]File Not found /root/config/wifi/ssid
+WARN  (rsist_ob.c:  46) [18:33:40.510]File Not found /root/config/wifi/key
+WARN  (rsist_ob.c:  46) [18:33:40.511]File Not found /root/config/auth/sm_auth
+WARN  (rsist_ob.c:  46) [18:33:40.512]File Not found /root/config/wifi/encryption
+WARN  (rsist_ob.c:  46) [18:33:40.512]File Not found /root/config/auth/sm_id
+ERROR (rsist_ob.c:  77) [18:33:40.513]Invalid number in /root/config/auth/sm_id
+WARN  (rsist_ob.c:  46) [18:33:40.513]File Not found /root/config/auth/network_id
+ERROR (rsist_ob.c:  77) [18:33:40.564]Invalid number in /root/config/auth/network_id
+WARN  (pp/smapp.c:1951) [18:33:40.565]File Not found /tmp/ap_mode
+INFO  (pp/smapp.c: 494) [18:33:40.725]OS 4.4.2 FW 4.5.17 DRV 1.61
+INFO  (cs/imssl.c: 137) [18:33:40.875]Loading client cert into imssl context
+ERROR (rsist_rw.c: 103) [18:33:40.876]Cannot open /root/config/serv_priv_key_inactive.der
+ERROR (rsist_rw.c: 103) [18:33:40.876]Cannot open /root/config/server_cert_inactive.der
+INFO  (pp/smapp.c: 542) [18:33:40.877]cam2sm key/cert -3 -3
+INFO  (k_listen.c: 622) [18:33:40.878]sock worker [77adad7c]
+INFO  (   ob/ob.c: 217) [18:33:40.878]Initializing OB SEM
+INFO  (   ob/ob.c: 286) [18:33:40.879]Encryption suite set to version 2
+INFO  (pd/httpd.c: 376) [18:33:40.880]Server ready to accept connection
+[   29.716501] br-lan: port 1(eth0) entered blocking state
+[   29.720284] br-lan: port 1(eth0) entered disabled state
+[   29.725972] device eth0 entered promiscuous mode
+[   29.744723] IPv6: ADDRCONF(NETDEV_UP): br-lan: link is not ready
+[   29.790463] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+INFO  (  cs/net.c: 243) [18:33:42.784]we version compiled value = 22
+ERROR (  cs/net.c: 251) [18:33:42.785]Scan Trigger ioctl failed for if wlan0: Network is down
+ERROR (   ob/ob.c: 308) [18:33:42.785]Could not parse site scan info. Aborting
+INFO  (ndpoints.c: 287) [18:33:42.786]Log length 1626 1626
+INFO  (ndpoints.c: 295) [18:33:42.786]len less than than 4000 bytes, but greater than 100
+INFO  (ndpoints.c: 304) [18:33:42.787]Wanted to read 1526 bytes. Read 1526 bytes
+INFO  (/imcjson.c: 134) [18:33:44.085]Found carriage returns: 54
+INFO  (/imcjson.c: 135) [18:33:44.085]Found new lines: 21
+INFO  (   ob/ob.c: 705) [18:33:44.086]Starting AP mode: BLINK-1Q50
+INFO  (s_config.c: 188) [18:33:44.087]Command to run: wifi
+INFO  (util/sys.c: 111) [18:33:44.087]Command was run: wifi Status: 0
+INFO  (   ob/ob.c: 711) [18:33:44.088]Command to run: /root/apps/led_controller/led_controller 24
+INFO  (util/sys.c: 111) [18:33:44.088]Command was run: /root/apps/led_controller/led_controller 24 Status: 0
+INFO  (   ob/ob.c: 715) [18:33:44.089]AP mode active
+[   31.735851] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   31.868950] br-lan: port 2(wlan0) entered blocking state
+[   31.872907] br-lan: port 2(wlan0) entered disabled state
+[   31.878556] device wlan0 entered promiscuous mode
+[   31.975188] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   31.980351] br-lan: port 2(wlan0) entered blocking state
+[   31.985506] br-lan: port 2(wlan0) entered forwarding state
+[   32.042920] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+udhcpc: started, v1.30.1
+udhcpc: sending discover
+udhcpc: no lease, failing
+[   42.421476] device wlan0 left promiscuous mode
+[   42.424759] br-lan: port 2(wlan0) entered disabled state
+[   43.237680] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   43.298975] br-lan: port 2(wlan0) entered blocking state
+[   43.302930] br-lan: port 2(wlan0) entered disabled state
+[   43.308720] device wlan0 entered promiscuous mode
+[   43.313210] br-lan: port 2(wlan0) entered blocking state
+[   43.318145] br-lan: port 2(wlan0) entered forwarding state
+[   43.366476] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   69.849556] random: crng init done
