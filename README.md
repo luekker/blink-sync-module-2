@@ -3,7 +3,7 @@
 ## Overview
 Hardware documentation for the Blink Sync Module 2. This repository contains findings from reverse engineering and hardware exploration to gain shell access and understand the device's internals.
 
-<img src="images/pcb-top.jpeg" width="100"><img src="images/blink-sync-module-2.jpeg" width="100">
+<img src="images/pcb-top.jpg" width="100"><img src="images/blink-sync-module-2.jpg" width="100">
 
 ## Hardware Specifications
 
@@ -66,13 +66,16 @@ Please press Enter to activate this console.
 
 ## 6-Pin Debug Header
 
+<img src="images/labelled-pins.png" width="400">
+
 ### Voltage Measurements (Device Powered, Idle State)
-- **Pin 1:** 3.25V
+
+- **Pin 1:** 2.68V - 1.6V
 - **Pin 2:** 0V
-- **Pin 3:** 0V (confirmed GND)
-- **Pin 4:** 0V
+- **Pin 3:** 0V - 0.5V 
+- **Pin 4:** 0V (confirmed GND)
 - **Pin 5:** 0V
-- **Pin 6:** 2.68V
+- **Pin 6:** 3.25V
 
 ### Pin Behavior Testing
 
