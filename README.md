@@ -9,7 +9,7 @@ Hardware documentation for the Blink Sync Module 2. This repository contains fin
 
 **IMPORTANT: The existing RECESSIM wiki page lists incorrect hardware for this version - Rev AO. Hardware specifications below:**
 
-- **SOC:** Atheros AR9331 rev 1 (MIPS 24Kc @ 400MHz) - Despite boot saying 9330 its is a 9331 [AR9331 Documentation](https://github.com/Deoptim/atheros/blob/master/AR9331.pdf)
+- **SOC:** Atheros AR9331 rev 1 (MIPS 24Kc @ 400MHz) - Despite boot saying 9330 its is a 9331 [AR9331 Documentation](https://github.com/luekker/blink-sync-module-2/blob/main/docs/Atheros%20-%20AR9331.pdf)
 - **RAM:** 64 MB DDR2 16-bit [ISSI IS43TR16640BL Datasheet](https://www.issi.com/WW/pdf/43-46TR16640B-81280BL.pdf)
 - **Flash:** 8 MB Winbond W25Q64 (SPI) [Winbond W25Q64 Datasheet](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/)
 - **WiFi:** Atheros AR9330 built-in
