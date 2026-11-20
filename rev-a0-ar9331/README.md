@@ -14,7 +14,7 @@ Findings from reverse engineering and hardware exploration of the Rev A0 board, 
 **Note: The RECESSIM wiki page lists an NXP i.MX6 UltraLite. That matches a different revision of this device ([Rev 03](../rev-03-imx6ulz/)), not this Rev A0 board. Hardware specifications below:**
 
 - **SOC:** Atheros AR9331 rev 1 (MIPS 24Kc @ 400MHz) - Despite boot saying 9330 its is a 9331 [AR9331 Documentation](docs/Atheros%20-%20AR9331.pdf)
-- **RAM:** 64 MB DDR2 16-bit [ISSI IS43TR16640BL Datasheet](https://www.issi.com/WW/pdf/43-46TR16640B-81280BL.pdf)
+- **RAM:** 64 MB DDR2 16-bit
 - **Flash:** 8 MB Winbond W25Q64 (SPI) [Winbond W25Q64 Datasheet](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/)
 - **WiFi:** Atheros AR9330 built-in
 - **Sub-GHz Radio:** Silicon Labs Si4455 [Silicon Labs Si4455 Datasheet](https://www.silabs.com/documents/public/data-sheets/Si4455.pdf)
@@ -72,12 +72,12 @@ Please press Enter to activate this console.
 
 ### Voltage Measurements (Device Powered, Idle State)
 
-- **Pin 1:** 2.68V - 1.6V
+- **Pin 1:** 3.25V
 - **Pin 2:** 0V
-- **Pin 3:** 0V - 0.5V 
-- **Pin 4:** GND
+- **Pin 3:** GND
+- **Pin 4:** 0V - 0.5V
 - **Pin 5:** 0V
-- **Pin 6:** 3.25V
+- **Pin 6:** 2.68V - 1.6V
 
 ### Pin Behavior Testing
 
