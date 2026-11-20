@@ -1,21 +1,23 @@
-# Blink Sync Module 2 - Rev AO - Hardware Investigation
+# Blink Sync Module 2 - Rev A0 (AR9331) - Hardware Investigation
+
+[← Back to main README](../README.md)
 
 ## Overview
-Hardware documentation for the Blink Sync Module 2. This repository contains findings from reverse engineering and hardware exploration to gain shell access and understand the device's internals.
+Findings from reverse engineering and hardware exploration of the Rev A0 board, aimed at gaining shell access and understanding the device's internals.
+
+**PCB marking:** `ISI-1503-SA SYNC REV A0 EU`
 
 <img src="images/pcb-top.jpg" width="100"><img src="images/blink-sync-module-2.jpg" width="100">
 
 ## Hardware Specifications
 
-**IMPORTANT: The existing RECESSIM wiki page lists incorrect hardware for this version - Rev AO. Hardware specifications below:**
+**Note: The RECESSIM wiki page lists an NXP i.MX6 UltraLite. That matches a different revision of this device ([Rev 03](../rev-03-imx6ulz/)), not this Rev A0 board. Hardware specifications below:**
 
-- **SOC:** Atheros AR9331 rev 1 (MIPS 24Kc @ 400MHz) - Despite boot saying 9330 its is a 9331 [AR9331 Documentation](https://github.com/luekker/blink-sync-module-2/blob/main/docs/Atheros%20-%20AR9331.pdf)
+- **SOC:** Atheros AR9331 rev 1 (MIPS 24Kc @ 400MHz) - Despite boot saying 9330 its is a 9331 [AR9331 Documentation](docs/Atheros%20-%20AR9331.pdf)
 - **RAM:** 64 MB DDR2 16-bit [ISSI IS43TR16640BL Datasheet](https://www.issi.com/WW/pdf/43-46TR16640B-81280BL.pdf)
 - **Flash:** 8 MB Winbond W25Q64 (SPI) [Winbond W25Q64 Datasheet](https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/)
 - **WiFi:** Atheros AR9330 built-in
 - **Sub-GHz Radio:** Silicon Labs Si4455 [Silicon Labs Si4455 Datasheet](https://www.silabs.com/documents/public/data-sheets/Si4455.pdf)
-
-**The wiki previously listed NXP i.MX6 UltraLite - this is incorrect for this hardware revision.**
 
 ## UART Access
 
@@ -159,18 +161,3 @@ PORT   STATE SERVICE
 ## Boot Logs
 
 See `boot-logs/` directory for complete boot sequences:
-
-## Related Projects
-
-- [bling-wrt](https://github.com/lurume84/bling-wrt) - Customization for original Blink Sync Module (different hardware)
-- [Blink Mini teardown](https://astrid.tech/2022/07/07/0/blink-mini-disassembly/) - Hardware analysis of Blink Mini camera
-- [BlinkMonitorProtocol](https://github.com/MattTW/BlinkMonitorProtocol) - Reverse engineered cloud API documentation
-- [Reversing Blink Cameras](https://www.brainonfire.net/blog/2023/10/21/reversing-blink/) - Uses Rev AO board
-
-## Contributing
-
-Found additional information or corrections? Please open an issue or submit a pull request!
-
-## Disclaimer
-
-This project is for educational and research purposes only. Modifications to your Blink Sync Module may void warranty and could potentially damage the device. The author is not responsible for any damage to hardware or loss of functionality. This work is not affiliated with or endorsed by Blink or Amazon.
