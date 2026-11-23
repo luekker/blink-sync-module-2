@@ -33,7 +33,8 @@ Holds a HAB-signed U-Boot, then:
 
 - **Console:** UART1
 - **Baud rate:** 115200
-- **TX only:** A TX pad was found but no RX, so boot logs can be read but no commands can be sent. The pad location was not documented in the issue.
+- **TX only:** A TX pad was found but no RX, so boot logs can be read but no commands can be sent.
+- **TX pad location:** Same as shown on the [RECESSIM wiki](https://wiki.recessim.com/w/images/2/22/Txpin.png): a small round test pad in the cluster beside the SoC, between the TM26 and TM48 labels, next to C220. The wiki photo is from a different revision, but ELECTROHAXZ confirmed the pad is in the same place.
 
 ## Secure Boot (HAB)
 

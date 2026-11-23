@@ -26,9 +26,9 @@ Findings from reverse engineering and hardware exploration of the Rev A0 board, 
 
 ### Pinout
 Test pads labeled TM1, TM2, TM3 on PCB:
-- **TM1:** GND
+- **TM1:** RX (receive to device)
 - **TM2:** TX (transmit from device)
-- **TM3:** RX (receive to device)
+- **TM3:** GND
 
 ## Boot Process
 
